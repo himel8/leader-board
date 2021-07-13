@@ -25,7 +25,7 @@ header{
 }
 .container{ 
     background-color: #FFFFFF;
-    margin-top: 20px;
+    margin: 20px 0;
     padding: 20px;
     border-radius: 15px;
 }
@@ -105,12 +105,43 @@ hr{
 .blog-info span{
   color: #562EFF;
 }
-/* -------------- 
-  google font
---------------- */
-/* -------------- 
-  google font
---------------- */
-/* -------------- 
-  google font
---------------- */
+/* ---- course section ---- */
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 0 30px 0;
+}
+.course img{
+  width: 224px;
+  height: 104px;
+}
+.author{
+  color: #ED6B4F;
+}
+.author-text{
+  margin: 3px 0;
+}
+.info{
+  display: flex;
+  align-items: center;
+}
+.fa-star.yellow{
+  color: #FFC014;
+}
+.fa-star.gray{
+  color: #AEAEAE;
+}
+.info p{
+  margin: 0 0 0 7px;
+}
+.info-time{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  background-color: #FFE4E8;
+  border-radius: 15px;
+}
+.info-time p{
+  margin: 0 0 0 7px;
+}
