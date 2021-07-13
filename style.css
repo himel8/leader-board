@@ -3,31 +3,34 @@
 --------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* -------------- 
-  Header section
+  Re-use section
 --------------- */
 body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #E5E5E5;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E5E5E5;
 }
+.flexible{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container{ 
+  background-color: #FFFFFF;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+}
+.container-size{
+  width: 870px;
+}
+/* -------------- 
+  Header section
+--------------- */
 header{
     background-color: #562EFF;
     padding: 15px;
-}
-.flexible{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.container-size{
-    width: 870px;
-}
-.container{ 
-    background-color: #FFFFFF;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 15px;
 }
 .nav-bar{
     display: flex;
@@ -57,12 +60,12 @@ header{
 /* -------------- 
   main section
 --------------- */
-/* ---- player section ---- */
 .section-title h2{
   color: #562EFF;
   font-size: 24px;
   font-weight: 500;
 }
+/* ---- player section ---- */
 .players{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -111,15 +114,18 @@ hr{
   grid-template-columns: repeat(3, 1fr);
   padding: 0 0 30px 0;
 }
+.course{
+  box-shadow: 0px 0px 8px 3px #b8b4b49d;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
 .course img{
   width: 224px;
   height: 104px;
 }
 .author{
   color: #ED6B4F;
-}
-.author-text{
-  margin: 3px 0;
 }
 .info{
   display: flex;
@@ -137,11 +143,7 @@ hr{
 .info-time{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-left: 20px;
   background-color: #FFE4E8;
   border-radius: 15px;
-}
-.info-time p{
-  margin: 0 0 0 7px;
 }
